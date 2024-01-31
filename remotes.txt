@@ -1,1 +1,1 @@
-cura https://cura.jfrog.io/artifactory/api/conan/cura-conan-dev True
+cura-le http://localhost:8082/artifactory/api/conan/cura-le-local True
