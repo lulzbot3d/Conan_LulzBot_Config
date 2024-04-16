@@ -1,1 +1,1 @@
-cura-le http://localhost:8082/artifactory/api/conan/cura-le-local True
+cura-le https://artifacts.lulzbot.com/artifactory/api/conan/cura-le True
