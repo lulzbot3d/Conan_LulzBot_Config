@@ -1,0 +1,24 @@
+include(default)
+
+[build_requires]
+
+[settings]
+compiler.cppstd=17
+curaenginele:compiler.cppstd=20
+curaenginele*:compiler.cppstd=20
+curaenginele_plugin_infill_generate:compiler.cppstd=20
+curaenginele_plugin_gradual_flow:compiler.cppstd=20
+curaenginele_grpc_definitions:compiler.cppstd=20
+scriptale:compiler.cppstd=20
+umspatialle*:compiler.cppstd=20
+dulcificumle:compiler.cppstd=20
+curale_settings:compiler.cppstd=20
+
+{% if compiler == 'gcc' %}compiler.libcxx=libstdc++11
+{% elif compiler == 'apple-clang' %}compiler.libcxx=libc++
+{% elif compiler == 'Visual Studio' %}compiler.toolset=v143
+{% endif %}
+[options]
+[env]
+
+[conf]
