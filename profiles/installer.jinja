@@ -2,21 +2,21 @@ include(cura.jinja)
 
 [conf]
 tools.build:skip_test=True
-user.sentry:url=https://734f9ec9024f73e53701d59c3ffddfe3@o323038.ingest.sentry.io/4506257745510401
-user.sentry:organization=ultimaker-o7
+user.sentry:url=https://55c41fed2cd646a099384279344b0d20@o1281016.ingest.us.sentry.io/4507422323113984
+user.sentry:organization=fame3d
 
 [options]
-curaengine/*:enable_sentry=True
-curaengine/*:sentry_send_binaries=True
-curaengine/*:sentry_create_release=True
+curaenginele/*:enable_sentry=True
+curaenginele/*:sentry_send_binaries=True
+curaenginele/*:sentry_create_release=True
 arcus/*:enable_sentry=True
 arcus/*:sentry_send_binaries=True
-arcus/*:sentry_project=curaengine
+arcus/*:sentry_project=curaenginele-5
 clipper/*:enable_sentry=True
 clipper/*:sentry_send_binaries=True
-clipper/*:sentry_project=curaengine
+clipper/*:sentry_project=curaenginele-5
 
 [settings]
-curaengine/*:build_type=RelWithDebInfo
+curaenginele/*:build_type=RelWithDebInfo
 arcus/*:build_type=RelWithDebInfo
 clipper/*:build_type=RelWithDebInfo
