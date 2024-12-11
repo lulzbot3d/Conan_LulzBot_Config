@@ -1,12 +1,9 @@
-# LulzBot Conan configuration files
+# Conan LulzBot Configuration Files
 
-## This repo is not yet configured
-
-**Conan configuration for Community developers**
+## Conan configuration for community developers
 
 use as:
-```
-conan config install https://github.com/lulzbot3d/conan-config-le.git
-```
 
-
+```bash
+conan config install https://github.com/lulzbot3d/Conan_LulzBot_Config.git
+```
