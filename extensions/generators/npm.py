@@ -27,4 +27,4 @@ class npm:
 
         # Create the .npmrc file
         save(self._conanfile, str(Path(self._conanfile.generators_folder, ".npmrc")),
-             "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}\n@ultimaker:registry=https://npm.pkg.github.com\nalways-auth=true")
+             "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}\n@lulzbot3d:registry=https://npm.pkg.github.com\nalways-auth=true")
