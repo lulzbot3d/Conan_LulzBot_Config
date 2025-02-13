@@ -12,16 +12,16 @@ curaengine/*:sentry_create_release=True
 arcus/*:enable_sentry=True
 arcus/*:sentry_send_binaries=True
 arcus/*:sentry_project=curaengine
-{% if platform.system() == 'Windows' %}
-# FIXME: Resolve Arcus null reference caused by MSVC 19.40
-# https://github.com/microsoft/STL/releases/tag/vs-2022-17.10
-arcus/*:compiler.version=193
-{% endif %}
 clipper/*:enable_sentry=True
 clipper/*:sentry_send_binaries=True
 clipper/*:sentry_project=curaengine
 
 [settings]
 curaengine/*:build_type=RelWithDebInfo
+{% if platform.system() == 'Windows' %}
+# FIXME: Resolve Arcus null reference caused by MSVC 19.40
+# https://github.com/microsoft/STL/releases/tag/vs-2022-17.10
+arcus/*:compiler.version=193
+{% endif %}
 arcus/*:build_type=RelWithDebInfo
 clipper/*:build_type=RelWithDebInfo
